@@ -16,7 +16,8 @@ const Home = () => {
   },[])
   
   const getPetServiceInfo = () => {
-    axios.get('http://localhost:5005/petServiceInfo').then(({ data }) => {
+    // axios.get('http://localhost:5005/petServiceInfo').then(({ data }) => {
+    axios.get('https://stormy-tor-28680.herokuapp.com/petServiceInfo').then(({ data }) => {
       console.log('data:', data)
       setpetServiceInfo([...data])
       dispatch(allresident(data))

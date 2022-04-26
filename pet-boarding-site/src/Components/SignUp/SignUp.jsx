@@ -28,8 +28,8 @@ const SignUp = () => {
   const postSignUpData = async(data) => {
     console.log('data:', data)
     try {
-      let res = await fetch(`http://localhost:5005/register`,{
-      // let res = await fetch(`https://safe-woodland-51614.herokuapp.com/register`,{
+      // let res = await fetch(`http://localhost:5005/register`,{
+      let res = await fetch(`https://stormy-tor-28680.herokuapp.com/register`,{
         method:'POST',
         body:data,
         headers:{
